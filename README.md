@@ -12,3 +12,4 @@ Python wrapper for cppjieba without any dependency, no need to compile by using 
 TODO:
 1. 接口说明
 2. Benchmark
+3. 源码修改编译命令
