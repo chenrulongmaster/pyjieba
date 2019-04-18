@@ -6,8 +6,9 @@
 
 Python wrapper for cppjieba without any dependency, no need to compile by using gcc/c++
 
-1. Python 封装C++版本的jieba分词器，性能非常好，并且已经预编译，无需安装时编译，即拿即用。
+1. Python 封装C++版本的jieba分词器，性能好，并且已经预编译，无需安装时编译，即拿即用。
 2. 已在Centos7、MaxOS10.13.6上测试 【Windows可能在某些情况下运行异常】。
+3. C++ 代码源自"结巴"中文分词的C++版本，[CPPJieba](https://github.com/yanyiwu/cppjieba)
 
 ## 使用说明
 
@@ -30,10 +31,10 @@ import pyjieba
 # 初始化[可选]
 pyjieba.initialize()
 # 初始化时，可以指定自己的词典
-pyjieba.initialize(dictPath='',  # 默认词典路径， 默认在包下路径/dict/jieba.dict.utf8
-    userPath='',  # 用户词典，默认在包下路径/dict/user.dict.utf8，多个词典使用英文分号;分隔开
-    idfPath='',  # IDF词典，默认在包下路径/dict/idf.utf8，提取关键词时使用
-    stopwordsPath=''  # 停用词词典，默认在包下路径/dict/stop_words.utf8
+pyjieba.initialize(dictPath='yourpath',  # 默认词典路径， 默认在包下路径/dict/jieba.dict.utf8
+    userPath='yourpath',  # 用户词典，默认在包下路径/dict/user.dict.utf8，多个词典使用英文分号;分隔开
+    idfPath='yourpath',  # IDF词典，默认在包下路径/dict/idf.utf8，提取关键词时使用
+    stopwordsPath='yourpath'  # 停用词词典，默认在包下路径/dict/stop_words.utf8
 )
 
 # 分词
