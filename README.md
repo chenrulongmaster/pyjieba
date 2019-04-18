@@ -31,7 +31,7 @@ import pyjieba
 pyjieba.initialize()
 # 初始化时，可以指定自己的词典
 pyjieba.initialize(dictPath='',  # 默认词典路径， 默认在包下路径/dict/jieba.dict.utf8
-    userPath='',  # 用户词典，默认在包下路径/dict/user.dict.utf8
+    userPath='',  # 用户词典，默认在包下路径/dict/user.dict.utf8，多个词典使用英文分号;分隔开
     idfPath='',  # IDF词典，默认在包下路径/dict/idf.utf8，提取关键词时使用
     stopwordsPath=''  # 停用词词典，默认在包下路径/dict/stop_words.utf8
 )
