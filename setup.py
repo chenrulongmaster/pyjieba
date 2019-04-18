@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import codecs
 from setuptools import setup, find_packages
 
 setup(
@@ -15,5 +16,5 @@ setup(
     platforms = 'any',
     install_requires = [],
     url='https://github.com/chenrulongmaster/pyjieba',
-    long_description=open('README.rst').read()
+    long_description=codecs.open('README.rst', mode='r', encoding='utf-8').read()
 )
