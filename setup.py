@@ -14,4 +14,6 @@ setup(
     include_package_data=True,
     platforms = 'any',
     install_requires = [],
+    url='https://github.com/chenrulongmaster/pyjieba',
+    long_description=open('README.rst').read()
 )
